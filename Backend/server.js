@@ -1,5 +1,9 @@
 //start server
 const app = require('./src/app');
+const connectDB = require('./src/database/db');
+
+//connect to database
+connectDB();
 
 
 app.listen(3000, () => {
